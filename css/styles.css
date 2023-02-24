@@ -19,6 +19,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Global Styles */
 body {
   font-weight: 400;
@@ -97,7 +102,7 @@ h1 {
   margin: 24px 0;
 }
 
-.intro-info .cta {
+.cta {
   padding: 5px 50px;
   height: 50px;
   width: 280px;
@@ -109,13 +114,15 @@ h1 {
   box-shadow: 1px 0px 5px hsl(322, 100%, 66%);
 }
 
-.intro-info .cta:hover {
+.cta:hover {
   opacity: 0.6;
 }
 
 .intro-illustration {
   width: 50%;
 }
+
+/* Product Features Section */
 
 .product-features {
   display: flex;
@@ -154,11 +161,119 @@ h1 {
   width: 35%;
 }
 
+/* Get Started Section */
+.get-started-wrapper {
+  max-width: 100%;
+}
+
+.get-started {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+  top: 80px;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  padding: 50px 100px;
+  border-radius: 24px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
+}
+
+.get-started-title {
+  color: hsl(192, 100%, 9%);
+  text-align: center;
+}
+
+/* App Footer */
+.app-footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 0;
+}
+
+.footer-info > * {
+  width: 25%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-link:hover {
+  color: hsl(208, 11%, 55%);
+}
+
+.social-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.social-link {
+  border: 1px solid white;
+  padding: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link.facebook:hover {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.social-link.twitter:hover {
+  color: #00acee;
+  border-color: #00acee;
+}
+
+.social-link.instagram:hover {
+  color: #962fbf;
+  border-color: #962fbf;
+}
+
+.copyrights {
+  margin-left: auto;
+  width: fit-content;
+  font-size: 14px;
+}
+
 /* Responsive Styles */
 @media (max-width: 699px) {
   .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .app-logo {
@@ -212,5 +327,45 @@ h1 {
 
   .feature-description {
     font-size: 14px;
+  }
+
+  .get-started {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .get-started-title {
+    font-size: 16px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .app-nav {
+    font-size: 16px;
+  }
+
+  .footer-info > * {
+    width: 100%;
+  }
+
+  .app-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .social-links {
+    align-self: center;
+    width: fit-content;
+  }
+
+  .copyrights {
+    margin: 0 auto;
   }
 }
