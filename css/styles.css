@@ -1,0 +1,371 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+
+button {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Global Styles */
+body {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* App Header */
+.app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background-color: transparent;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.try-for-free {
+  color: hsl(192, 100%, 9%);
+  background-color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 50px;
+  border-radius: 50px;
+  height: 40px;
+  box-shadow: 0px 0px 10px hsl(208, 11%, 55%);
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+/* Intro Section */
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  background-image: url('/images/bg-hero-desktop.svg');
+  background-color: hsl(193, 100%, 96%);
+}
+
+.intro-info {
+  width: 40%;
+}
+
+h1 {
+  font-size: 40px;
+  color: hsl(192, 100%, 9%);
+}
+
+.product-description {
+  margin: 24px 0;
+}
+
+.cta {
+  padding: 5px 50px;
+  height: 50px;
+  width: 280px;
+  border-radius: 50px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 1px 0px 5px hsl(322, 100%, 66%);
+}
+
+.cta:hover {
+  opacity: 0.6;
+}
+
+.intro-illustration {
+  width: 50%;
+}
+
+/* Product Features Section */
+
+.product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.product-feature {
+  padding: 50px;
+  padding-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
+}
+
+.product-feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature-info {
+  width: 45%;
+}
+
+.feature-title {
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 16px;
+}
+
+.feature-description {
+  color: hsl(208, 11%, 55%);
+}
+
+.feature-illustration {
+  width: 35%;
+}
+
+/* Get Started Section */
+.get-started-wrapper {
+  max-width: 100%;
+}
+
+.get-started {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+  top: 80px;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  padding: 50px 100px;
+  border-radius: 24px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
+}
+
+.get-started-title {
+  color: hsl(192, 100%, 9%);
+  text-align: center;
+}
+
+/* App Footer */
+.app-footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 0;
+}
+
+.footer-info > * {
+  width: 25%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-link:hover {
+  color: hsl(208, 11%, 55%);
+}
+
+.social-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.social-link {
+  border: 1px solid white;
+  padding: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link.facebook:hover {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.social-link.twitter:hover {
+  color: #00acee;
+  border-color: #00acee;
+}
+
+.social-link.instagram:hover {
+  color: #962fbf;
+  border-color: #962fbf;
+}
+
+.copyrights {
+  margin-left: auto;
+  width: fit-content;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 699px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .app-logo {
+    width: 100px;
+  }
+
+  .try-for-free {
+    padding: 3px 25px;
+    font-size: 12px;
+    height: 28px;
+  }
+
+  .intro {
+    flex-direction: column;
+    /* align-items: stretch; */
+    gap: 80px;
+  }
+
+  .intro > * {
+    width: 100%;
+  }
+
+  .intro-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .product-features .product-feature {
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 40px;
+  }
+
+  .product-feature > * {
+    width: 100%;
+  }
+
+  .feature-info {
+    text-align: center;
+  }
+
+  .feature-title {
+    font-size: 22px;
+  }
+
+  .feature-description {
+    font-size: 14px;
+  }
+
+  .get-started {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .get-started-title {
+    font-size: 16px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .app-nav {
+    font-size: 16px;
+  }
+
+  .footer-info > * {
+    width: 100%;
+  }
+
+  .app-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .social-links {
+    align-self: center;
+    width: fit-content;
+  }
+
+  .copyrights {
+    margin: 0 auto;
+  }
+}
